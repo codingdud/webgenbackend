@@ -1,0 +1,12 @@
+# Deno
+/deps.ts
+/import_map.json
+/deno.lock
+/.vscode/
+/.idea/
+/*.log
+/node_modules/
+/dist/
+/build/
+/coverage/
+/.env

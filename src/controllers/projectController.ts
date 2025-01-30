@@ -1,7 +1,6 @@
 // src/controllers/projectController.ts
 import { Request, Response } from "npm:express";
 import { Project } from "../models/Project.ts";
-import { Image } from "../models/Image.ts";
 
 // Create a new project
 export const createProject = async (req: Request, res: Response) => {
