@@ -8,6 +8,7 @@ import imageRoutes from "./routes/images.ts";
 import billingRoutes from "./routes/billing.ts";
 import authRoutes from "./routes/auth.ts";
 import projectRoutes from "./routes/project.ts";
+import dashboardRoutes from "./routes/dashboard.ts"
 const app = express();
 
 // Connect to MongoDB
@@ -26,6 +27,7 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/images', imageRoutes);
 app.use('/api/v1/billing', billingRoutes);
 app.use('/api/v1/project', projectRoutes);
+app.use('/api/v1/dashboard', dashboardRoutes);
 
 // Error handling middleware
 app.use((err: Error, _req: express.Request, res: express.Response,_next: express.Function) => {

@@ -88,6 +88,9 @@ export const generateImage = async (req: Request, res: Response) => {
       // Add the image ID to the project's images array
       project.images.push(newImage._id);
       project.updatedAt = new Date(); // Update the project's updatedAt timestamp
+      if (project.status==='draft') {
+        project.status='in-progress';
+      }
       await project.save();
   }
   // Save the image to MongoDB

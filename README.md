@@ -29,6 +29,9 @@ This is the backend service for the WebGen project, built with Deno.
 
 1. Start the development server:
     ```sh
+    deno task dev
+    ```
+    ```sh
     deno run --allow-net --allow-env --allow-read --allow-sys --watch src/app.ts
     ```
     ```sh

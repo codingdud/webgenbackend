@@ -166,7 +166,10 @@ export const getProjectById = async (req: Request, res: Response) => {
         const project = await Project.findOne({
             _id: id,
             user: user._id,
-        }).populate('images'); // Populate the images field with actual image documents
+        }).populate({
+            path: 'images', // Populate the images field
+            options: { sort: { generatedAt: -1 } }, // Sort images by createdAt (newest first)
+        }); // Populate the images field with actual image documents
 
         if (!project) {
             return res.status(404).json({
