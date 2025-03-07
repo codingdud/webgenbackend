@@ -9,11 +9,11 @@ import billingRoutes from "./routes/billing.ts";
 import authRoutes from "./routes/auth.ts";
 import projectRoutes from "./routes/project.ts";
 import dashboardRoutes from "./routes/dashboard.ts"
-const app = express();
+export const app = express();
 
 // Connect to MongoDB
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: Deno.env.get("CORS_ORIGIN") || "http://localhost:5173",
   credentials: true,
 };
 

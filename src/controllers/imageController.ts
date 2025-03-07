@@ -7,6 +7,7 @@ import { Project } from '../models/Project.ts';
 export const generateImage = async (req: Request, res: Response) => {
   try {
     const { style, colorScheme, prompt, type, negative_prompt,aspect_ratio,output_format } = req.body;
+    //console.log(negative_prompt);
     const user = req.user;
     const projectId = req.params.id;
     // Check credits

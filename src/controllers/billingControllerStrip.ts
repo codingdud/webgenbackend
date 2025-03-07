@@ -7,7 +7,7 @@ const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") || "");
 
 export const getCredits = async (req: Request, res: Response) => {
   try {
-    const user = req.user;
+    const user = await req.user;
     res.json({
       success: true,
       data: { 

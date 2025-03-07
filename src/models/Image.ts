@@ -12,7 +12,7 @@ const imageSchema = new mongoose.Schema({
     metadata: {
       type: {
         type: String,
-        enum: ['header', 'card', 'profile', 'custom'],
+        enum: ['header', 'card', 'profile', 'background', 'thumbnail', 'product', 'icon', 'infographic', 'testimonial', 'cta', 'custom'],
         required: true
       },
       prompt: { 

@@ -1,4 +1,3 @@
-import { StringifyOptions } from "node:querystring";
 import cloudinary from './cloudinary.ts';
 
 // Function to calculate storage usage for a user's images in Cloudinary
