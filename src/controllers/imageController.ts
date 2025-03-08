@@ -3,21 +3,25 @@ import { Request, Response } from "npm:express";
 import cloudinary from '../utils/cloudinary.ts';
 import { Image } from '../models/Image.ts';
 import { Project } from '../models/Project.ts';
+import { logger } from '../utils/logger.ts';
 
 export const generateImage = async (req: Request, res: Response) => {
   try {
-    const { style, colorScheme, prompt, type, negative_prompt,aspect_ratio,output_format } = req.body;
-    //console.log(negative_prompt);
+    logger.debug('Starting image generation process');
+    const { style, colorScheme, prompt, type, negative_prompt, aspect_ratio, output_format } = req.body;
     const user = req.user;
     const projectId = req.params.id;
+
     // Check credits
-    if (user.creditsRemaining <= 0) {
+    if (user.subscription.creditsRemaining <= 0) {
+      logger.warn(`User ${user._id} attempted to generate image with insufficient credits`);
       return res.status(402).json({
         success: false,
         error: { code: '402', message: 'Insufficient credits' }
       });
     }
-    // Call NVIDIA API
+
+    logger.debug('Calling NVIDIA API for image generation');
     const nvResponse = await fetch(
       "https://ai.api.nvidia.com/v1/genai/stabilityai/stable-diffusion-3-medium",
       {
@@ -40,31 +44,36 @@ export const generateImage = async (req: Request, res: Response) => {
         })
       }
     );
+
     if(!nvResponse.ok){
+      logger.error('NVIDIA API request failed', { status: nvResponse.status, statusText: nvResponse.statusText });
       return res.status(500).json({
         success: false,
         error: { code: '500', message: 'Image generation failed', details: nvResponse.statusText }
       });
     }
+
     const imageData = await nvResponse.json();
-    if(imageData.finish_reason!=='SUCCESS'){
+    if(imageData.finish_reason !== 'SUCCESS'){
+      logger.error('Image generation failed', { reason: imageData.finish_reason });
       return res.status(500).json({
         success: false,
         error: { code: '500', message: 'Image generation failed', details: imageData.finish_reason }
       });
     }
-    // Update user credits
+
+    logger.debug('Updating user credits');
     user.subscription.creditsRemaining -= 1;
     await user.save();
-    // Add the data URL prefix if missing
-    const base64Image = `data:image/${output_format || 'jpeg'};base64,${imageData.image}`;
 
-    // Upload the Base64 image to Cloudinary
+    logger.debug('Uploading image to Cloudinary');
+    const base64Image = `data:image/${output_format || 'jpeg'};base64,${imageData.image}`;
     const cloudinaryResponse = await cloudinary.uploader.upload(base64Image, {
-        folder: `${user._id}/${projectId}/`, // Optional: Organize images in a folder
-        resource_type: 'image',
+      folder: `${user._id}/${projectId}/`,
+      resource_type: 'image',
     });
-    // Create a new Image document
+
+    logger.debug('Creating new image document');
     const newImage = new Image({
       url: cloudinaryResponse.secure_url,
       publicId: cloudinaryResponse.public_id,
@@ -77,31 +86,38 @@ export const generateImage = async (req: Request, res: Response) => {
       },
       user: user._id, // Associate the image with the user
     });
+
     if (projectId) {
+      logger.debug(`Adding image to project: ${projectId}`);
       const project = await Project.findById(projectId);
       if (!project) {
-          return res.status(404).json({
-              success: false,
-              error: { code: '404', message: 'Project not found' },
-          });
+        logger.warn(`Project not found: ${projectId}`);
+        return res.status(404).json({
+          success: false,
+          error: { code: '404', message: 'Project not found' },
+        });
       }
 
-      // Add the image ID to the project's images array
       project.images.push(newImage._id);
-      project.updatedAt = new Date(); // Update the project's updatedAt timestamp
-      if (project.status==='draft') {
-        project.status='in-progress';
+      project.updatedAt = new Date();
+      if (project.status === 'draft') {
+        project.status = 'in-progress';
+        logger.info(`Project ${projectId} status updated to in-progress`);
       }
       await project.save();
-  }
-  // Save the image to MongoDB
-  await newImage.save();
+    }
 
-  res.status(201).json({
-    success: true,
-    data: newImage,
-});
-  } catch (error) {
+    await newImage.save();
+    logger.info(`Successfully generated and saved image for user ${user._id}`);
+
+    res.status(201).json({
+      success: true,
+      data: newImage,
+    });
+  } catch (error: unknown) {
+    logger.error('Image generation failed', { 
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
     res.status(500).json({
       success: false,
       error: { code: '500', message: 'Image generation failed', details: error }
@@ -109,57 +125,60 @@ export const generateImage = async (req: Request, res: Response) => {
   }
 };
 
-
-
-
 export const deleteImage = async (req: Request, res: Response) => {
   try {
-      const imageId  = req.params.id; // Image ID to delete
-      const user = req.user; // Authenticated user
+    const imageId = req.params.id;
+    const user = req.user;
 
-      // Find the image in the database
-      const image = await Image.findById(imageId);
-      if (!image) {
-          return res.status(404).json({
-              success: false,
-              error: { code: '404', message: 'Image not found' },
-          });
-      }
+    logger.debug(`Attempting to delete image: ${imageId}`);
 
-      // Check if the image belongs to the authenticated user
-      if (image.user.toString() !== user._id.toString()) {
-          return res.status(403).json({
-              success: false,
-              error: { code: '403', message: 'You are not authorized to delete this image' },
-          });
-      }
-
-      // Delete the image from Cloudinary
-      await cloudinary.uploader.destroy(image.publicId);
-
-      // Remove the image reference from associated projects
-      await Project.updateMany(
-          { images: imageId }, // Find projects that reference this image
-          { $pull: { images: imageId } } // Remove the image ID from the images array
-      );
-
-      // Delete the image document from MongoDB
-      await Image.findByIdAndDelete(imageId);
-
-      // Respond with success
-      res.status(200).json({
-          success: true,
-          message: 'Image deleted successfully',
+    const image = await Image.findById(imageId);
+    if (!image) {
+      logger.warn(`Image not found: ${imageId}`);
+      return res.status(404).json({
+        success: false,
+        error: { code: '404', message: 'Image not found' },
       });
-  } catch (error: any) {
-      console.error('Error deleting image:', error);
-      res.status(500).json({
-          success: false,
-          error: { code: '500', message: 'Failed to delete image', details: error.message },
+    }
+
+    if (image.user.toString() !== user._id.toString()) {
+      logger.warn(`Unauthorized deletion attempt for image ${imageId} by user ${user._id}`);
+      return res.status(403).json({
+        success: false,
+        error: { code: '403', message: 'You are not authorized to delete this image' },
       });
+    }
+
+    logger.debug('Deleting image from Cloudinary');
+    await cloudinary.uploader.destroy(image.publicId);
+
+    logger.debug('Updating project references');
+    await Project.updateMany(
+      { images: imageId },
+      { $pull: { images: imageId } }
+    );
+
+    await Image.findByIdAndDelete(imageId);
+    logger.info(`Successfully deleted image ${imageId}`);
+
+    res.status(200).json({
+      success: true,
+      message: 'Image deleted successfully',
+    });
+  } catch (error: unknown) {
+    logger.error('Error deleting image', { 
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
+    res.status(500).json({
+      success: false,
+      error: { 
+        code: '500', 
+        message: 'Failed to delete image', 
+        details: error instanceof Error ? error.message : 'Unknown error' 
+      },
+    });
   }
 };
-
 
 /* export const saveImage = async (req: Request, res: Response) => {
   try {

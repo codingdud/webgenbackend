@@ -3,13 +3,16 @@ import { Request, Response } from "npm:express";
 import { User } from "../models/User.ts";
 import bcrypt from "npm:bcryptjs";
 import { v4 as uuidv4 } from "npm:uuid";
+import { logger } from "../utils/logger.ts";
 
 export const signUp = async (req: Request, res: Response) => {
   try {
+    logger.debug('Processing signup request');
     const { email, password } = req.body;
 
     // Validate input
     if (!email || !password) {
+      logger.warn('Signup attempt with missing credentials');
       return res.status(400).json({
         success: false,
         error: { code: '400', message: 'Email and password are required' }
@@ -19,6 +22,7 @@ export const signUp = async (req: Request, res: Response) => {
     // Check if user exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
+      logger.info(`Signup attempt with existing email: ${email}`);
       return res.status(409).json({
         success: false,
         error: { code: '409', message: 'User already exists' }
@@ -40,6 +44,7 @@ export const signUp = async (req: Request, res: Response) => {
     });
 
     await user.save();
+    logger.info(`New user registered: ${email}`);
 
     // Generate JWT token
     const token = user.generateToken();
@@ -59,13 +64,16 @@ export const signUp = async (req: Request, res: Response) => {
       rtoken
       }
     });
-    } catch (error: any) {
+    } catch (error: unknown) {
+    logger.error('Signup failed', { 
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
     res.status(500).json({
       success: false,
       error: { 
         code: '500', 
         message: 'Sign up failed', 
-        details: error.message 
+        details: error instanceof Error ? error.message : 'Unknown error'
       }
     });
   }
@@ -73,33 +81,36 @@ export const signUp = async (req: Request, res: Response) => {
 
 export const signIn = async (req: Request, res: Response) => {
   try {
+    logger.debug('Processing signin request');
     const { email, password } = req.body;
-    // Validate input
+
     if (!email || !password) {
+      logger.warn('Signin attempt with missing credentials');
       return res.status(400).json({
         success: false,
         error: { code: '400', message: 'Email and password are required' }
       });
     }
 
-    // Find user
     const user = await User.findOne({ email });
     if (!user) {
+      logger.info(`Failed signin attempt for non-existent user: ${email}`);
       return res.status(401).json({
         success: false,
         error: { code: '401', message: 'User Dont Exist in System' }
       });
     }
 
-    // Check password
     const isMatch = await user.comparePassword(password);
     if (!isMatch) {
+      logger.warn(`Failed signin attempt for user: ${email}`);
       return res.status(401).json({
         success: false,
         error: { code: '401', message: 'Invalid credentials' }
       });
     }
 
+    logger.info(`Successful signin: ${email}`);
     // Generate JWT token
     const token = user.generateToken();
     const rtoken = user.generateRefreshToken();
@@ -117,13 +128,16 @@ export const signIn = async (req: Request, res: Response) => {
         rtoken
       }
     });
-  } catch (error:any) {
+  } catch (error: unknown) {
+    logger.error('Signin failed', { 
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
     res.status(500).json({
       success: false,
       error: { 
         code: '500', 
         message: 'Sign in failed', 
-        details: error.message 
+        details: error instanceof Error ? error.message : 'Unknown error'
       }
     });
   }
@@ -132,13 +146,12 @@ export const signIn = async (req: Request, res: Response) => {
 export const resetApiKey = async (req: Request, res: Response) => {
   try {
     const user = req.user;
+    logger.debug(`Processing API key reset for user: ${user.email}`);
 
-    // Generate new API key
     const newApiKey = uuidv4();
-
-    // Update user
     await User.findByIdAndUpdate(user._id, { apiKey: newApiKey });
-
+    
+    logger.info(`API key reset successful for user: ${user.email}`);
     res.json({
       success: true,
       data: { 
@@ -146,13 +159,16 @@ export const resetApiKey = async (req: Request, res: Response) => {
         message: 'API key reset successfully' 
       }
     });
-  } catch (error:any) {
+  } catch (error: unknown) {
+    logger.error('API key reset failed', { 
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
     res.status(500).json({
       success: false,
       error: { 
         code: '500', 
         message: 'API key reset failed', 
-        details: error.message 
+        details: error instanceof Error ? error.message : 'Unknown error'
       }
     });
   }
