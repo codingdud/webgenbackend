@@ -18,11 +18,15 @@ interface ISubscription {
 
 // Define interface for user document
 interface IUser {
+  name?: string;
   email: string;
   password: string;
   subscription: ISubscription;
   apiKey?: string;
   createdAt: Date;
+  profileImage?: string;
+  organization?: string;
+  role?: 'developer' | 'backend-eniner' | 'frontend-eniner' | 'student'
 }
 
 // Define interface for user methods
@@ -34,7 +38,7 @@ interface IUserMethods {
 }
 
 // Create the type for UserModel
-type UserModel = mongoose.Model<IUser, {}, IUserMethods>;
+type UserModel = mongoose.Model<IUser, Record<string | number | symbol, never>, IUserMethods>;
 
 // Define schemas
 const subscriptionSchema = new mongoose.Schema<ISubscription>({
@@ -54,6 +58,18 @@ const subscriptionSchema = new mongoose.Schema<ISubscription>({
 });
 
 const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>({
+  profileImage: {
+    type: String,
+    default: 'https://example.com/default.jpg',
+    required: false
+  },
+  name: { 
+    type: String, 
+    required: false,
+    default: function(this: IUser) {
+      return this.email ? this.email.split('@')[0] : undefined;
+    }
+  },
   email: { 
     type: String, 
     required: true, 
@@ -62,6 +78,15 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>({
   password: { 
     type: String, 
     required: true 
+  },
+  organization: {
+    type: String,
+    default: 'Personal'
+  },
+  role: {
+    type: String,
+    enum: ['developer', 'backend eniner', 'frontend eniner', 'student'],
+    default: 'developer'
   },
   subscription: {
     type: subscriptionSchema,

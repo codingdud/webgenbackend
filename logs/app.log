@@ -3,3 +3,650 @@
 2025-03-08T04:57:38.391Z INFO Logger initialized
 2025-03-08T04:57:38.392Z INFO Cloudinary configured successfully
 2025-03-08T04:57:39.487Z INFO Server running on port 5000
+2025-03-08T11:07:32.756Z INFO [default] Logger initialized in local mode
+2025-03-08T11:07:32.757Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:07:33.797Z INFO [default] Server running on port 5000
+2025-03-08T11:20:45.061Z INFO [default] Logger initialized in local mode
+2025-03-08T11:20:45.062Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:20:46.035Z INFO [default] Server running on port 5000
+2025-03-08T11:20:49.728Z INFO [default] Logger initialized in local mode
+2025-03-08T11:20:49.728Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:20:50.562Z INFO [default] Server running on port 5000
+2025-03-08T11:20:53.946Z INFO [default] Logger initialized in local mode
+2025-03-08T11:20:53.947Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:20:54.951Z INFO [default] Server running on port 5000
+2025-03-08T11:20:59.349Z INFO [default] Logger initialized in local mode
+2025-03-08T11:20:59.350Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:00.288Z INFO [default] Server running on port 5000
+2025-03-08T11:21:06.040Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:06.041Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:06.954Z INFO [default] Server running on port 5000
+2025-03-08T11:21:13.340Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:13.341Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:14.296Z INFO [default] Server running on port 5000
+2025-03-08T11:21:19.876Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:19.877Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:20.696Z INFO [default] Server running on port 5000
+2025-03-08T11:21:26.630Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:26.631Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:27.469Z INFO [default] Server running on port 5000
+2025-03-08T11:21:44.520Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:44.521Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:45.428Z INFO [default] Server running on port 5000
+2025-03-08T11:21:49.602Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:49.603Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:50.615Z INFO [default] Server running on port 5000
+2025-03-08T11:21:53.579Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:53.580Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:54.514Z INFO [default] Server running on port 5000
+2025-03-08T11:21:58.008Z INFO [default] Logger initialized in local mode
+2025-03-08T11:21:58.009Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:21:58.912Z INFO [default] Server running on port 5000
+2025-03-08T11:22:04.903Z INFO [default] Logger initialized in local mode
+2025-03-08T11:22:04.904Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:22:05.822Z INFO [default] Server running on port 5000
+2025-03-08T11:22:08.347Z INFO [default] Logger initialized in local mode
+2025-03-08T11:22:08.348Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:22:09.342Z INFO [default] Server running on port 5000
+2025-03-08T11:22:14.986Z INFO [default] Logger initialized in local mode
+2025-03-08T11:22:14.986Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:22:15.976Z INFO [default] Server running on port 5000
+2025-03-08T11:22:34.923Z INFO [default] Logger initialized in local mode
+2025-03-08T11:22:34.924Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:22:35.829Z INFO [default] Server running on port 5000
+2025-03-08T11:22:42.070Z INFO [default] Logger initialized in local mode
+2025-03-08T11:22:42.070Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:22:42.998Z INFO [default] Server running on port 5000
+2025-03-08T11:22:51.448Z INFO [default] Logger initialized in local mode
+2025-03-08T11:22:51.448Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:22:52.268Z INFO [default] Server running on port 5000
+2025-03-08T11:22:57.407Z INFO [default] Logger initialized in local mode
+2025-03-08T11:22:57.408Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:22:58.402Z INFO [default] Server running on port 5000
+2025-03-08T11:23:00.328Z INFO [default] Logger initialized in local mode
+2025-03-08T11:23:00.329Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:23:01.283Z INFO [default] Server running on port 5000
+2025-03-08T11:24:28.535Z INFO [default] Logger initialized in local mode
+2025-03-08T11:24:28.535Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:24:29.501Z INFO [default] Server running on port 5000
+2025-03-08T11:26:42.938Z INFO [default] Logger initialized in local mode
+2025-03-08T11:26:42.939Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:26:43.959Z INFO [default] Server running on port 5000
+2025-03-08T11:27:35.881Z INFO [default] Logger initialized in local mode
+2025-03-08T11:27:35.882Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:27:36.844Z INFO [default] Server running on port 5000
+2025-03-08T11:27:39.500Z INFO [default] Logger initialized in local mode
+2025-03-08T11:27:39.500Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:27:40.430Z INFO [default] Server running on port 5000
+2025-03-08T11:28:18.744Z INFO [default] Logger initialized in local mode
+2025-03-08T11:28:18.744Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:28:19.681Z INFO [default] Server running on port 5000
+2025-03-08T11:28:23.258Z INFO [default] Logger initialized in local mode
+2025-03-08T11:28:23.259Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:28:24.133Z INFO [default] Server running on port 5000
+2025-03-08T11:28:35.271Z INFO [default] Logger initialized in local mode
+2025-03-08T11:28:35.272Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:28:36.149Z INFO [default] Server running on port 5000
+2025-03-08T11:28:47.831Z INFO [default] Logger initialized in local mode
+2025-03-08T11:28:47.832Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:28:48.670Z INFO [default] Server running on port 5000
+2025-03-08T11:28:53.927Z INFO [default] Logger initialized in local mode
+2025-03-08T11:28:53.928Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:28:54.854Z INFO [default] Server running on port 5000
+2025-03-08T11:33:28.765Z INFO [default] Logger initialized in local mode
+2025-03-08T11:33:28.766Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:33:29.702Z INFO [default] Server running on port 5000
+2025-03-08T11:34:53.942Z INFO [default] Logger initialized in local mode
+2025-03-08T11:34:53.943Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:34:54.887Z INFO [default] Server running on port 5000
+2025-03-08T11:35:18.018Z INFO [default] Logger initialized in local mode
+2025-03-08T11:35:18.019Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:35:18.882Z INFO [default] Server running on port 5000
+2025-03-08T11:35:21.257Z INFO [default] Logger initialized in local mode
+2025-03-08T11:35:21.258Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:35:22.147Z INFO [default] Server running on port 5000
+2025-03-08T11:35:36.690Z INFO [default] Logger initialized in local mode
+2025-03-08T11:35:36.691Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:35:37.571Z INFO [default] Server running on port 5000
+2025-03-08T11:36:58.037Z INFO [default] Logger initialized in local mode
+2025-03-08T11:36:58.038Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:36:58.955Z INFO [default] Server running on port 5000
+2025-03-08T11:37:03.290Z INFO [default] Logger initialized in local mode
+2025-03-08T11:37:03.291Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:37:04.202Z INFO [default] Server running on port 5000
+2025-03-08T11:37:11.093Z INFO [default] Logger initialized in local mode
+2025-03-08T11:37:11.094Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:37:11.956Z INFO [default] Server running on port 5000
+2025-03-08T11:37:19.362Z INFO [default] Logger initialized in local mode
+2025-03-08T11:37:19.362Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:37:20.187Z INFO [default] Server running on port 5000
+2025-03-08T11:46:36.023Z INFO [default] Logger initialized in local mode
+2025-03-08T11:46:36.023Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:46:36.976Z INFO [default] Server running on port 5000
+2025-03-08T11:59:58.445Z INFO [default] Logger initialized in local mode
+2025-03-08T11:59:58.446Z INFO [default] Cloudinary configured successfully
+2025-03-08T11:59:59.407Z INFO [default] Server running on port 5000
+2025-03-08T12:00:41.521Z INFO [default] Logger initialized in local mode
+2025-03-08T12:00:41.522Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:00:42.548Z INFO [default] Server running on port 5000
+2025-03-08T12:01:25.495Z INFO [default] Logger initialized in local mode
+2025-03-08T12:01:25.496Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:01:26.372Z INFO [default] Server running on port 5000
+2025-03-08T12:15:32.353Z INFO [default] Logger initialized in local mode
+2025-03-08T12:15:32.354Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:15:33.329Z INFO [default] Server running on port 5000
+2025-03-08T12:27:33.916Z INFO [default] Logger initialized in local mode
+2025-03-08T12:27:33.918Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:27:34.831Z INFO [default] Server running on port 5000
+2025-03-08T12:27:47.905Z INFO [default] Logger initialized in local mode
+2025-03-08T12:27:47.906Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:27:48.629Z INFO [default] Server running on port 5000
+2025-03-08T12:27:53.602Z INFO [default] Logger initialized in local mode
+2025-03-08T12:27:53.602Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:27:54.327Z INFO [default] Server running on port 5000
+2025-03-08T12:27:58.877Z INFO [default] Logger initialized in local mode
+2025-03-08T12:27:58.879Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:27:59.698Z INFO [default] Server running on port 5000
+2025-03-08T12:28:01.466Z ERROR [default] Error parsing form data
+2025-03-08T12:28:01.466Z ERROR [default] User update failed
+2025-03-08T12:28:08.765Z ERROR [default] Error parsing form data
+2025-03-08T12:28:08.765Z ERROR [default] User update failed
+2025-03-08T12:28:14.275Z ERROR [default] Error parsing form data
+2025-03-08T12:28:14.275Z ERROR [default] User update failed
+2025-03-08T12:29:39.945Z INFO [default] Logger initialized in local mode
+2025-03-08T12:29:39.946Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:29:40.799Z INFO [default] Server running on port 5000
+2025-03-08T12:30:13.734Z ERROR [default] Failed to parse form data
+2025-03-08T12:30:13.744Z ERROR [default] Error parsing form data
+2025-03-08T12:30:13.744Z ERROR [default] User update failed
+2025-03-08T12:30:15.191Z ERROR [default] Failed to parse form data
+2025-03-08T12:30:15.192Z ERROR [default] Error parsing form data
+2025-03-08T12:30:15.192Z ERROR [default] User update failed
+2025-03-08T12:30:16.453Z ERROR [default] Failed to parse form data
+2025-03-08T12:30:16.454Z ERROR [default] Error parsing form data
+2025-03-08T12:30:16.454Z ERROR [default] User update failed
+2025-03-08T12:31:02.741Z WARN [default] Invalid content type for form data
+2025-03-08T12:31:02.742Z ERROR [default] Error parsing form data
+2025-03-08T12:31:02.742Z ERROR [default] User update failed
+2025-03-08T12:31:28.375Z ERROR [default] Failed to parse form data
+2025-03-08T12:31:28.376Z ERROR [default] Error parsing form data
+2025-03-08T12:31:28.376Z ERROR [default] User update failed
+2025-03-08T12:31:29.533Z ERROR [default] Failed to parse form data
+2025-03-08T12:31:29.534Z ERROR [default] Error parsing form data
+2025-03-08T12:31:29.534Z ERROR [default] User update failed
+2025-03-08T12:31:30.613Z ERROR [default] Failed to parse form data
+2025-03-08T12:31:30.614Z ERROR [default] Error parsing form data
+2025-03-08T12:31:30.614Z ERROR [default] User update failed
+2025-03-08T12:32:31.112Z INFO [default] Logger initialized in local mode
+2025-03-08T12:32:31.112Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:32:31.996Z INFO [default] Server running on port 5000
+2025-03-08T12:32:39.673Z INFO [default] Logger initialized in local mode
+2025-03-08T12:32:39.675Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:32:40.485Z INFO [default] Server running on port 5000
+2025-03-08T12:32:49.568Z ERROR [default] User update failed
+2025-03-08T12:32:52.699Z ERROR [default] User update failed
+2025-03-08T12:33:00.346Z INFO [default] Logger initialized in local mode
+2025-03-08T12:33:00.347Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:33:01.178Z INFO [default] Server running on port 5000
+2025-03-08T12:33:06.095Z ERROR [default] User update failed
+2025-03-08T12:33:09.839Z ERROR [default] User update failed
+2025-03-08T12:33:11.581Z ERROR [default] User update failed
+2025-03-08T12:33:26.410Z INFO [default] Logger initialized in local mode
+2025-03-08T12:33:26.411Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:33:27.274Z INFO [default] Server running on port 5000
+2025-03-08T12:33:46.696Z INFO [default] Logger initialized in local mode
+2025-03-08T12:33:46.697Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:33:47.582Z INFO [default] Server running on port 5000
+2025-03-08T12:34:08.636Z INFO [default] Logger initialized in local mode
+2025-03-08T12:34:08.637Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:34:09.702Z INFO [default] Server running on port 5000
+2025-03-08T12:47:13.919Z INFO [default] Logger initialized in local mode
+2025-03-08T12:47:13.920Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:47:14.845Z INFO [default] Server running on port 5000
+2025-03-08T12:49:09.400Z INFO [default] Logger initialized in local mode
+2025-03-08T12:49:09.401Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:49:10.269Z INFO [default] Server running on port 5000
+2025-03-08T12:49:18.676Z INFO [default] Logger initialized in local mode
+2025-03-08T12:49:18.677Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:49:19.588Z INFO [default] Server running on port 5000
+2025-03-08T12:49:28.765Z INFO [default] Logger initialized in local mode
+2025-03-08T12:49:28.766Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:49:29.702Z INFO [default] Server running on port 5000
+2025-03-08T12:49:36.936Z INFO [default] Logger initialized in local mode
+2025-03-08T12:49:36.937Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:49:37.884Z INFO [default] Server running on port 5000
+2025-03-08T12:49:47.933Z INFO [default] Logger initialized in local mode
+2025-03-08T12:49:47.934Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:49:48.924Z INFO [default] Server running on port 5000
+2025-03-08T12:49:57.332Z INFO [default] Logger initialized in local mode
+2025-03-08T12:49:57.333Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:49:58.284Z INFO [default] Server running on port 5000
+2025-03-08T12:50:01.430Z INFO [default] Logger initialized in local mode
+2025-03-08T12:50:01.432Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:50:02.335Z INFO [default] Server running on port 5000
+2025-03-08T12:50:04.911Z INFO [default] Logger initialized in local mode
+2025-03-08T12:50:04.912Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:50:05.873Z INFO [default] Server running on port 5000
+2025-03-08T12:52:53.114Z INFO [default] Logger initialized in local mode
+2025-03-08T12:52:53.116Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:52:54.164Z INFO [default] Server running on port 5000
+2025-03-08T12:53:09.761Z INFO [default] Logger initialized in local mode
+2025-03-08T12:53:09.762Z INFO [default] Cloudinary configured successfully
+2025-03-08T12:53:10.619Z INFO [default] Server running on port 5000
+2025-03-08T13:01:48.120Z INFO [default] Logger initialized in local mode
+2025-03-08T13:01:48.121Z INFO [default] Cloudinary configured successfully
+2025-03-08T13:01:49.017Z INFO [default] Server running on port 5000
+2025-03-08T13:11:54.643Z INFO [default] Logger initialized in local mode
+2025-03-08T13:11:54.644Z INFO [default] Cloudinary configured successfully
+2025-03-08T13:11:55.783Z INFO [default] Server running on port 5000
+2025-03-08T13:23:15.360Z INFO [default] Logger initialized in local mode
+2025-03-08T13:23:15.361Z INFO [default] Cloudinary configured successfully
+2025-03-08T13:23:16.289Z INFO [default] Server running on port 5000
+2025-03-08T13:29:49.742Z INFO [default] Logger initialized in local mode
+2025-03-08T13:29:49.743Z INFO [default] Cloudinary configured successfully
+2025-03-08T13:29:50.572Z INFO [default] Server running on port 5000
+2025-03-08T13:32:17.276Z INFO [default] Logger initialized in local mode
+2025-03-08T13:32:17.277Z INFO [default] Cloudinary configured successfully
+2025-03-08T13:32:18.622Z INFO [default] Server running on port 5000
+2025-03-08T13:33:51.525Z INFO [default] Logger initialized in local mode
+2025-03-08T13:33:51.526Z INFO [default] Cloudinary configured successfully
+2025-03-08T13:33:53.146Z INFO [default] Server running on port 5000
+2025-03-08T13:34:41.300Z INFO [default] Logger initialized in local mode
+2025-03-08T13:34:41.301Z INFO [default] Cloudinary configured successfully
+2025-03-08T13:34:42.692Z INFO [default] Server running on port 5000
+2025-03-08T17:26:39.714Z INFO [default] Logger initialized in local mode
+2025-03-08T17:26:39.715Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:26:40.624Z INFO [default] Server running on port 5000
+2025-03-08T17:26:45.919Z INFO [default] Logger initialized in local mode
+2025-03-08T17:26:45.920Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:26:46.842Z INFO [default] Server running on port 5000
+2025-03-08T17:26:59.909Z INFO [default] Logger initialized in local mode
+2025-03-08T17:26:59.911Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:27:00.866Z INFO [default] Server running on port 5000
+2025-03-08T17:27:21.935Z INFO [default] Logger initialized in local mode
+2025-03-08T17:27:21.936Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:27:22.745Z INFO [default] Server running on port 5000
+2025-03-08T17:27:30.668Z INFO [default] Logger initialized in local mode
+2025-03-08T17:27:30.670Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:27:31.531Z INFO [default] Server running on port 5000
+2025-03-08T17:28:18.609Z INFO [default] Logger initialized in local mode
+2025-03-08T17:28:18.610Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:28:19.486Z INFO [default] Server running on port 5000
+2025-03-08T17:28:19.947Z ERROR [default] Internal Server Error
+2025-03-08T17:28:29.317Z ERROR [default] Internal Server Error
+2025-03-08T17:28:45.342Z INFO [default] Logger initialized in local mode
+2025-03-08T17:28:45.344Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:28:46.267Z INFO [default] Server running on port 5000
+2025-03-08T17:28:52.359Z ERROR [default] Internal Server Error
+2025-03-08T17:30:14.973Z INFO [default] Logger initialized in local mode
+2025-03-08T17:30:14.974Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:30:15.953Z INFO [default] Server running on port 5000
+2025-03-08T17:30:39.196Z INFO [default] Logger initialized in local mode
+2025-03-08T17:30:39.197Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:30:40.273Z INFO [default] Server running on port 5000
+2025-03-08T17:31:11.047Z INFO [default] Logger initialized in local mode
+2025-03-08T17:31:11.049Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:31:11.853Z INFO [default] Server running on port 5000
+2025-03-08T17:31:36.753Z INFO [default] Logger initialized in local mode
+2025-03-08T17:31:36.754Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:31:37.723Z INFO [default] Server running on port 5000
+2025-03-08T17:32:29.184Z INFO [default] Logger initialized in local mode
+2025-03-08T17:32:29.186Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:32:30.159Z INFO [default] Server running on port 5000
+2025-03-08T17:32:56.918Z INFO [default] Logger initialized in local mode
+2025-03-08T17:32:56.919Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:32:57.756Z INFO [default] Server running on port 5000
+2025-03-08T17:33:08.370Z INFO [default] Logger initialized in local mode
+2025-03-08T17:33:08.371Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:33:09.353Z INFO [default] Server running on port 5000
+2025-03-08T17:33:34.070Z INFO [default] Logger initialized in local mode
+2025-03-08T17:33:34.071Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:33:34.970Z INFO [default] Server running on port 5000
+2025-03-08T17:34:09.399Z INFO [default] Logger initialized in local mode
+2025-03-08T17:34:09.400Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:34:10.401Z INFO [default] Server running on port 5000
+2025-03-08T17:34:18.254Z INFO [default] Logger initialized in local mode
+2025-03-08T17:34:18.255Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:34:19.116Z INFO [default] Server running on port 5000
+2025-03-08T17:36:24.905Z INFO [default] Logger initialized in local mode
+2025-03-08T17:36:24.907Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:36:25.774Z INFO [default] Server running on port 5000
+2025-03-08T17:36:47.418Z ERROR [default] Failed to upload profile image
+2025-03-08T17:36:47.419Z ERROR [default] User update failed
+2025-03-08T17:39:02.687Z ERROR [default] Failed to upload profile image
+2025-03-08T17:39:02.689Z ERROR [default] User update failed
+2025-03-08T17:39:04.322Z ERROR [default] Failed to upload profile image
+2025-03-08T17:39:04.323Z ERROR [default] User update failed
+2025-03-08T17:39:05.938Z ERROR [default] Failed to upload profile image
+2025-03-08T17:39:05.947Z ERROR [default] User update failed
+2025-03-08T17:39:54.025Z INFO [default] Logger initialized in local mode
+2025-03-08T17:39:54.026Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:39:54.902Z INFO [default] Server running on port 5000
+2025-03-08T17:40:01.269Z INFO [default] Logger initialized in local mode
+2025-03-08T17:40:01.271Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:40:02.149Z INFO [default] Server running on port 5000
+2025-03-08T17:40:16.287Z ERROR [default] Failed to upload profile image
+2025-03-08T17:40:16.288Z ERROR [default] User update failed
+2025-03-08T17:41:23.772Z INFO [default] Logger initialized in local mode
+2025-03-08T17:41:23.774Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:41:24.662Z INFO [default] Server running on port 5000
+2025-03-08T17:41:28.640Z INFO [default] Profile image uploaded successfully
+2025-03-08T17:41:28.661Z ERROR [default] User update failed
+2025-03-08T17:42:10.271Z INFO [default] Logger initialized in local mode
+2025-03-08T17:42:10.272Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:42:11.175Z INFO [default] Server running on port 5000
+2025-03-08T17:42:19.329Z INFO [default] Profile image uploaded successfully
+2025-03-08T17:42:19.383Z INFO [default] User information updated successfully
+2025-03-08T17:44:51.086Z INFO [default] Logger initialized in local mode
+2025-03-08T17:44:51.087Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:44:52.046Z INFO [default] Server running on port 5000
+2025-03-08T17:46:10.135Z INFO [default] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-08T17:47:48.756Z INFO [default] Logger initialized in local mode
+2025-03-08T17:47:48.758Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:47:49.621Z INFO [default] Server running on port 5000
+2025-03-08T17:48:03.241Z INFO [default] Logger initialized in local mode
+2025-03-08T17:48:03.243Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:48:04.073Z INFO [default] Server running on port 5000
+2025-03-08T17:50:26.547Z INFO [default] Logger initialized in local mode
+2025-03-08T17:50:26.549Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:50:27.475Z INFO [default] Server running on port 5000
+2025-03-08T17:53:15.991Z INFO [default] Logger initialized in local mode
+2025-03-08T17:53:15.993Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:53:16.857Z INFO [default] Server running on port 5000
+2025-03-08T17:56:00.001Z INFO [default] Logger initialized in local mode
+2025-03-08T17:56:00.003Z INFO [default] Cloudinary configured successfully
+2025-03-08T17:56:00.927Z INFO [default] Server running on port 5000
+2025-03-08T18:02:23.051Z INFO [default] Logger initialized in local mode
+2025-03-08T18:02:23.052Z INFO [default] Cloudinary configured successfully
+2025-03-08T18:02:24.031Z INFO [default] Server running on port 5000
+2025-03-08T18:04:05.433Z INFO [default] Logger initialized in local mode
+2025-03-08T18:04:05.435Z INFO [default] Cloudinary configured successfully
+2025-03-08T18:04:06.287Z INFO [default] Server running on port 5000
+2025-03-08T18:06:04.520Z INFO [default] Logger initialized in local mode
+2025-03-08T18:06:04.521Z INFO [default] Cloudinary configured successfully
+2025-03-08T18:06:05.426Z INFO [default] Server running on port 5000
+2025-03-08T18:06:46.240Z INFO [default] Logger initialized in local mode
+2025-03-08T18:06:46.242Z INFO [default] Cloudinary configured successfully
+2025-03-08T18:06:47.062Z INFO [default] Server running on port 5000
+2025-03-08T18:07:01.336Z INFO [default] Logger initialized in local mode
+2025-03-08T18:07:01.338Z INFO [default] Cloudinary configured successfully
+2025-03-08T18:07:02.350Z INFO [default] Server running on port 5000
+2025-03-08T18:57:28.184Z INFO [default] Logger initialized in local mode
+2025-03-08T18:57:28.186Z INFO [default] Cloudinary configured successfully
+2025-03-08T18:57:29.184Z INFO [default] Server running on port 5000
+2025-03-08T18:57:49.700Z ERROR [default] Internal Server Error
+2025-03-08T18:58:05.557Z ERROR [default] Internal Server Error
+2025-03-08T18:59:05.256Z ERROR [default] Internal Server Error
+2025-03-08T19:00:28.162Z ERROR [default] Internal Server Error
+2025-03-08T19:00:44.350Z INFO [default] User information updated successfully
+2025-03-08T19:00:51.955Z ERROR [default] Internal Server Error
+2025-03-08T19:04:15.329Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-08T19:04:15.337Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-08T19:04:16.525Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-08T19:04:34.926Z INFO [base_handler.ts:57 FileHandler.format] Profile image uploaded successfully
+2025-03-08T19:04:34.973Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-08T19:05:26.082Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-08T19:05:26.086Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-08T19:05:26.954Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-08T19:05:38.322Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-08T19:05:38.326Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-08T19:05:39.204Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-08T19:06:17.068Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-08T19:06:17.072Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-08T19:06:17.975Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-08T19:07:11.396Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-08T19:07:11.399Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-08T19:07:12.275Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-08T19:07:33.473Z INFO [base_handler.ts:57 FileHandler.format] Profile image uploaded successfully
+2025-03-08T19:07:33.525Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-08T19:07:59.352Z INFO [base_handler.ts:57 FileHandler.format] Profile image uploaded successfully
+2025-03-08T19:07:59.426Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T12:29:55.894Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T12:29:55.896Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T12:29:57.986Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T12:30:47.805Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T12:30:47.807Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T12:30:48.525Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T12:31:24.806Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T12:31:24.808Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T12:31:25.574Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T12:31:41.606Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T12:31:41.608Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T12:31:42.358Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T12:33:22.699Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T12:33:22.702Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T12:33:23.368Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T12:37:59.961Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T12:39:50.186Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T12:39:53.270Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T12:39:54.243Z INFO [base_handler.ts:57 FileHandler.format] Retrieved 10 projects for user: 6794be25f9eeb88fc50858f8
+2025-03-09T12:51:25.642Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T13:28:49.707Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T13:35:35.480Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:35:35.483Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:35:36.261Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:36:09.330Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:36:09.332Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:36:10.063Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:36:15.794Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:36:15.796Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:36:16.542Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:36:28.349Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:36:28.352Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:36:29.120Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:36:37.250Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:36:37.253Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:36:37.981Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:36:59.196Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:36:59.199Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:37:00.041Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:37:12.430Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:37:12.433Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:37:13.227Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:38:30.231Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:38:30.234Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:38:31.027Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:42:40.922Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:42:40.926Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:42:41.774Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:43:03.967Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:43:03.971Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:43:04.836Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:44:18.187Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:44:18.189Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:44:18.882Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:44:23.676Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:44:23.679Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:44:24.484Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:44:28.133Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:44:28.136Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:44:28.924Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:44:49.668Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:44:49.672Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:44:50.476Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:44:54.870Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:44:54.873Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:44:56.318Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:45:37.222Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:45:37.225Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:45:37.991Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:47:19.530Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T13:47:19.533Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T13:47:20.415Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T13:50:47.797Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T13:52:39.723Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T13:52:41.982Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T13:52:44.790Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T14:50:11.283Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T14:50:11.286Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T14:50:12.000Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T14:51:35.328Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T14:51:35.330Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T14:51:36.115Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T14:51:57.582Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T14:51:59.178Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T14:51:59.403Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T14:52:01.125Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T14:52:02.162Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T15:30:29.664Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T15:30:33.284Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T15:30:35.178Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:30:36.019Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T15:32:05.871Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:32:07.549Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:32:49.329Z INFO [base_handler.ts:57 FileHandler.format] Profile image uploaded successfully
+2025-03-09T15:32:49.533Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:34:35.573Z INFO [base_handler.ts:57 FileHandler.format] Profile image uploaded successfully
+2025-03-09T15:34:35.625Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:35:17.618Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:35:30.615Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:36:51.572Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:36:53.552Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:36:57.551Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:37:04.544Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:37:06.559Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:37:38.389Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T15:37:41.004Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T15:37:43.223Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:37:43.349Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T15:37:55.687Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:39:01.584Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:39:03.564Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:39:05.578Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:39:05.645Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:39:21.554Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:39:52.163Z ERROR [base_handler.ts:57 FileHandler.format] User update failed
+2025-03-09T15:40:31.601Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:40:36.044Z ERROR [base_handler.ts:57 FileHandler.format] User update failed
+2025-03-09T15:43:05.567Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:43:32.567Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:43:43.588Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:43:43.660Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:44:14.566Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:44:14.576Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:44:19.555Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:44:21.559Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:00.017Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:02.816Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:02.824Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:03.622Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:03.629Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:05.577Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:05.580Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:23.559Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:42.562Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:45:44.557Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:46:26.553Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:46:31.561Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:46:56.551Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:46:59.565Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:47:01.553Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:47:19.597Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:47:19.598Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:50:26.792Z ERROR [base_handler.ts:57 FileHandler.format] User update failed
+2025-03-09T15:54:52.388Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T15:54:52.391Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T15:54:53.208Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T15:55:08.884Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T15:55:08.887Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T15:55:09.645Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T15:56:27.441Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T15:56:27.444Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T15:56:28.204Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T15:56:33.199Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:56:38.565Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:56:39.571Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:56:51.556Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:56:52.555Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:56:59.547Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:57:02.546Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:57:04.560Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:57:45.578Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:57:53.543Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:58:10.569Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:58:10.631Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:58:15.553Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:58:42.559Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:59:16.553Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:59:21.571Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T15:59:30.506Z ERROR [base_handler.ts:57 FileHandler.format] User update failed
+2025-03-09T16:00:43.571Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:00:48.547Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:01:07.625Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:03:52.663Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T16:03:54.721Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T16:03:56.614Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:03:56.716Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:03:57.023Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T16:06:39.590Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:07:48.455Z INFO [base_handler.ts:57 FileHandler.format] Profile image uploaded successfully
+2025-03-09T16:07:48.509Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:08:18.566Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:08:57.689Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:04.152Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:13.150Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:18.774Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:19.616Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:20.369Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:21.119Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:36.047Z INFO [base_handler.ts:57 FileHandler.format] Profile image uploaded successfully
+2025-03-09T16:09:36.100Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:09:50.109Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:10:01.408Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:10:28.213Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T16:10:29.660Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T16:10:31.761Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:10:31.915Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:10:34.622Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T16:11:40.939Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:12:01.178Z INFO [base_handler.ts:57 FileHandler.format] Retrieved 10 projects for user: 6794be25f9eeb88fc50858f8
+2025-03-09T16:12:04.857Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:12:04.898Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:12:43.581Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:13:54.968Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:54:22.005Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T16:54:24.526Z INFO [base_handler.ts:57 FileHandler.format] Successful signin: admin@gamil.com
+2025-03-09T16:54:27.196Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:54:27.214Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T16:54:27.299Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:54:37.952Z ERROR [base_handler.ts:57 FileHandler.format] User update failed
+2025-03-09T16:56:55.030Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T16:56:55.035Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T16:56:55.967Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T16:57:39.348Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T16:57:39.352Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T16:57:40.256Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T16:57:40.869Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:57:56.890Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:58:10.688Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:58:59.421Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:59:01.392Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T16:59:25.468Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T16:59:25.472Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T16:59:26.370Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T16:59:38.318Z ERROR [base_handler.ts:57 FileHandler.format] User update failed
+2025-03-09T17:00:59.410Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:01:01.261Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:01:06.694Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:17:59.276Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:02.392Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:15.424Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:15.430Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:36.411Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:36.416Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:43.407Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:45.387Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:18:46.402Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:19:15.407Z INFO [base_handler.ts:57 FileHandler.format] User information updated successfully
+2025-03-09T17:19:31.947Z INFO [base_handler.ts:57 FileHandler.format] Dashboard stats compiled successfully for user: 6794be25f9eeb88fc50858f8
+2025-03-09T17:19:32.419Z INFO [base_handler.ts:57 FileHandler.format] Retrieved 10 projects for user: 6794be25f9eeb88fc50858f8
+2025-03-09T17:20:49.896Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T17:20:49.899Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T17:20:50.849Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T17:22:29.277Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T17:22:29.281Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T17:22:30.153Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000
+2025-03-09T18:02:40.996Z INFO [base_handler.ts:57 FileHandler.format] Retrieved 10 projects for user: 6794be25f9eeb88fc50858f8
+2025-03-09T18:03:56.414Z INFO [base_handler.ts:57 FileHandler.format] Logger initialized in local mode
+2025-03-09T18:03:56.418Z INFO [base_handler.ts:57 FileHandler.format] Cloudinary configured successfully
+2025-03-09T18:03:57.275Z INFO [base_handler.ts:57 FileHandler.format] Server running on port 5000

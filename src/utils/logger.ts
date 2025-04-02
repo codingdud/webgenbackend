@@ -1,51 +1,62 @@
-import * as log from "jsr:@std/log@^0.219.0";
-import {  join } from "jsr:@std/path";
+import * as log from "jsr:@std/log@0.218.2";
+import { join } from "jsr:@std/path";
 
-// Get the current working directory
-const cwd = Deno.cwd();
-const logsDir = join(cwd, "logs");
+// Configure log levels based on environment
+const isDeploy = Deno.env.get("DENO_DEPLOYMENT_ID") !== undefined;
 
-// Ensure logs directory exists with proper permissions
-try {
-  await Deno.stat(logsDir);
-} catch (error) {
-  if (error instanceof Deno.errors.NotFound) {
-    await Deno.mkdir(logsDir, { recursive: true, mode: 0o755 });
+// Helper function to get caller location
+function getCallerLocation() {
+  const stack = new Error().stack?.split('\n')[3] || '';
+  const match = stack.match(/at (.+?) \((.+?):(\d+):(\d+)\)/);
+  if (match) {
+    const [_, func, file, line, col] = match;
+    return `${file.split('/').pop()}:${line} ${func}`;
+  }
+  return 'unknown location';
+}
+
+const handlers: Record<string, log.BaseHandler> = {
+  console: new log.ConsoleHandler("DEBUG", {
+    formatter: (record) => {
+      const time = new Date().toISOString();
+      const location = getCallerLocation();
+      return `${time} ${record.levelName} [${location}] ${record.msg}`;
+    },
+  })
+};
+
+// Only add file handler in non-deployment environment
+if (!isDeploy) {
+  try {
+    const logsDir = join(Deno.cwd(), "logs");
+    await Deno.mkdir(logsDir, { recursive: true });
+    
+    handlers.file = new log.FileHandler("INFO", {
+      filename: join(logsDir, "app.log"),
+      formatter: (record) => {
+        const time = new Date().toISOString();
+        const location = getCallerLocation();
+        return `${time} ${record.levelName} [${location}] ${record.msg}`;
+      },
+      mode: "a",
+    });
+  } catch (error) {
+    console.warn("Failed to setup file logging:", error);
   }
 }
 
-const logFile = join(logsDir, "app.log");
-console.log(`Log file: ${logFile}`);
 // Configure log levels
 await log.setup({
-  handlers: {
-    console: new log.ConsoleHandler("DEBUG", {
-      formatter: (record) => {
-        const time = new Date().toISOString();
-        return `${time} ${record.levelName} ${record.msg}`;
-      },
-    }),
-    file: new log.FileHandler("INFO", {
-      filename: logFile,
-      formatter: (record) => {
-        const time = new Date().toISOString();
-        return `${time} ${record.levelName} ${record.msg}`;
-      },
-      mode: "a", // Append mode
-    }),
-  },
+  handlers,
   loggers: {
     default: {
       level: "DEBUG",
-      handlers: ["console", "file"],
+      handlers: Object.keys(handlers),
     },
   },
 });
 
-// Get the logger instance
 const logger = log.getLogger();
-
-// Test log write
-logger.info("Logger initialized");
+logger.info(`Logger initialized in ${isDeploy ? 'deployment' : 'local'} mode`);
 
 export { logger };

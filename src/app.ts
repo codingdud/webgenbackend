@@ -9,8 +9,8 @@ import billingRoutes from "./routes/billing.ts";
 import authRoutes from "./routes/auth.ts";
 import projectRoutes from "./routes/project.ts";
 import dashboardRoutes from "./routes/dashboard.ts";
+import userRoutes from "./routes/user.ts";
 import { logger } from "./utils/logger.ts";
-
 
 export const app = express();
 
@@ -50,13 +50,14 @@ await connectDB();
 app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/images', imageRoutes);
 app.use('/api/v1/billing', billingRoutes);
 app.use('/api/v1/project', projectRoutes);
 app.use('/api/v1/dashboard', dashboardRoutes);
+app.use('/api/v1/user', userRoutes);
 
 // Error handling middleware
 app.use((err: Error, _req: express.Request, res: express.Response,_next: express.Function) => {
