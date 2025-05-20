@@ -40,7 +40,7 @@ export const getStartCardData = async (req: Request, res: Response) => {
         logger.debug('Fetching start card data');
         const user = req.user;
 
-        const totalImagesGenerated = await Image.countDocuments({ user: user._id });
+        const totalImagesGenerated = user.subscription.totalImgGenrated || 0;
         const startOfDay = new Date();
         startOfDay.setHours(0, 0, 0, 0);
         const totalImagesGeneratedToday = await Image.countDocuments({ 

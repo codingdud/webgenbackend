@@ -10,7 +10,9 @@ import authRoutes from "./routes/auth.ts";
 import projectRoutes from "./routes/project.ts";
 import dashboardRoutes from "./routes/dashboard.ts";
 import userRoutes from "./routes/user.ts";
+import templateRoutes from "./routes/template.ts"
 import { logger } from "./utils/logger.ts";
+import { handleStripeWebhook } from "./controllers/billingControllerStrip.ts";
 
 export const app = express();
 
@@ -36,6 +38,9 @@ const corsOptions = {
     'Content-Type', 
     'Authorization', 
     'X-Api-Key',
+    'Cookie',  
+    'Origin',  
+    'Accept',  
     'Access-Control-Allow-Origin',
     'Access-Control-Allow-Credentials',
     'Access-Control-Allow-Methods',
@@ -49,15 +54,22 @@ const corsOptions = {
 await connectDB();
 app.use(cors(corsOptions));
 app.use(cookieParser());
+app.use('/api/v1/billing/webhook', express.raw({ type: 'application/json' }));
+/* app.post(
+  '/api/v1/billing/webhook',
+  express.raw({ type: 'application/json' }),
+  handleStripeWebhook
+); */
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // Routes
+app.use('/api/v1/billing', billingRoutes);
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/images', imageRoutes);
-app.use('/api/v1/billing', billingRoutes);
 app.use('/api/v1/project', projectRoutes);
 app.use('/api/v1/dashboard', dashboardRoutes);
 app.use('/api/v1/user', userRoutes);
+app.use('/api/v1/template',templateRoutes);
 
 // Error handling middleware
 app.use((err: Error, _req: express.Request, res: express.Response,_next: express.Function) => {

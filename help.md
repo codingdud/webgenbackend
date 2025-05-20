@@ -23,3 +23,6 @@ fetch(url, options)
   .then(res => res.json())
   .then(json => console.log(json))
   .catch(err => console.error(err));
+
+
+  stripe listen --forward-to localhost:5000/api/v1/billing/webhook

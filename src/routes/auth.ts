@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.post('/signup', signUp);
 router.post('/signin', signIn);
-router.get('/refresh-token', refreshToken);
-router.post('/reset-api-key', authenticate, resetApiKey);
+router.post('/refresh-token', refreshToken);
+router.get('/reset-api-key', authenticate, resetApiKey);
 
 export default router;

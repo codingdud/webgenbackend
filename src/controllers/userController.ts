@@ -41,7 +41,7 @@ export const updateUserInfo = async (req: Request, res: Response) => {
     user.name = name || user.name;
 
     await user.save();
-    logger.info('User information updated successfully');
+    logger.info('User information updated or Fetch successfully');
 
     const { password, ...userWithoutPassword } = user.toObject();
     

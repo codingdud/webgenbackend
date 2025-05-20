@@ -5,12 +5,14 @@ import jwt from "npm:jsonwebtoken";
 
 // Define interfaces for the subscription
 interface ISubscription {
-  tier: 'free' | 'pro' | 'enterprise';
+  tier: 'free' | 'pro' | 'enterprise' | 'basic' | 'premium' | 'family';
   creditsRemaining: number;
+  totalImgGenrated:number,
   rateLimits: {
     dailyLimit: number;
     concurrentRequests: number;
   };
+  validUntil:Date;
   startDate: Date;
   renewalDate?: Date;
   isActive: boolean;
@@ -26,7 +28,8 @@ interface IUser {
   createdAt: Date;
   profileImage?: string;
   organization?: string;
-  role?: 'developer' | 'backend-eniner' | 'frontend-eniner' | 'student'
+  role?: 'developer' | 'backend-eniner' | 'frontend-eniner' | 'student';
+  stripeCustomerId:string;
 }
 
 // Define interface for user methods
@@ -44,15 +47,17 @@ type UserModel = mongoose.Model<IUser, Record<string | number | symbol, never>, 
 const subscriptionSchema = new mongoose.Schema<ISubscription>({
   tier: {
     type: String,
-    enum: ['free', 'pro', 'enterprise'],
+    enum: ['free','pro','enterprise','basic','premium','family'],
     default: 'free'
   },
+  totalImgGenrated:{type:Number,default:0},
   creditsRemaining: { type: Number, default: 100 },
   rateLimits: {
     dailyLimit: { type: Number, default: 100 },
     concurrentRequests: { type: Number, default: 5 }
   },
-  startDate: { type: Date, default: Date.now },
+  validUntil:{type:Date, default: () => new Date(Date.now() + (6 * 30 * 24 * 60 * 60 * 1000))},
+  startDate: { type: Date, default:Date.now },
   renewalDate: { type: Date },
   isActive: { type: Boolean, default: true }
 });
@@ -60,7 +65,7 @@ const subscriptionSchema = new mongoose.Schema<ISubscription>({
 const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>({
   profileImage: {
     type: String,
-    default: 'https://example.com/default.jpg',
+    default: 'https://res.cloudinary.com/dkon1kh9h/image/upload/v1743530356/6794be25f9eeb88fc50858f8/67ba1972a51ede1ae26f7fdc/nsbkaifjtvhz9u0gohpv.jpg',
     required: false
   },
   name: { 
@@ -99,6 +104,10 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>({
   createdAt: { 
     type: Date, 
     default: Date.now 
+  },
+  stripeCustomerId:{
+    type:String,
+    default:null
   }
 });
 
@@ -111,7 +120,7 @@ userSchema.methods.generateToken = function() {
   return jwt.sign(
     { id: this._id, email: this.email },
     Deno.env.get('JWT_SECRET') || '',
-    { expiresIn: '1d' }
+    { expiresIn: '1m' }
   );
 };
 
@@ -127,7 +136,7 @@ userSchema.methods.generateRefreshToken = function() {
   return jwt.sign(
     { id: this._id, email: this.email },
     Deno.env.get('JWT_REFRESH_SECRET') || '',
-    { expiresIn: '30d' }
+    { expiresIn: '1d' }
   );
 };
 

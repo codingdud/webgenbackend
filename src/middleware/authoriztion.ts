@@ -2,56 +2,84 @@
 import { Request, Response, NextFunction } from "npm:express";
 import jwt from "npm:jsonwebtoken";
 import { User } from "../models/User.ts";
+import { logger } from "../utils/logger.ts";
 
-export const authenticate =  (req: Request, res: Response, next: NextFunction) => {
+export const authenticate = (req: Request, res: Response, next: NextFunction) => {
   try {
     const token = req.headers.authorization?.split(' ')[1];
 
     if (!token) {
+      logger.warn('Authentication failed: Missing token');
       return res.status(401).json({
         success: false,
         error: { code: '401', message: 'Missing Token key' }
       });
     }
-    jwt.verify(token, Deno.env.get("JWT_SECRET") as string, async (err: jwt.VerifyErrors | null, decoded: { id: string;email:string; }) => {
-        if (err) {
-            return res.status(401).json({
-            success: false,
-            error: { code: '401', message: 'Invalid Token key' }
-            });
-        }
-        const user = await User.findOne({ _id: decoded.id });
-        if (!user) {
-            return res.status(401).json({
-            success: false,
-            error: { code: '402', message: 'User Not Found'}
-            });
-        }
-        req.user = user;
-        next();
+
+    jwt.verify(token, Deno.env.get("JWT_SECRET") as string, async (err: jwt.VerifyErrors | null, decoded: { id: string; email: string; }) => {
+      if (err) {
+        logger.warn('Authentication failed: Invalid token', { error: err.message });
+        return res.status(401).json({
+          success: false,
+          error: { code: '401', message: 'Invalid Token key' }
         });
-    } catch (error) {
-        next(error);
-    }   
+      }
+
+      const user = await User.findOne({ _id: decoded.id });
+      if (!user) {
+        logger.warn(`User not found: ${decoded.id}`);
+        return res.status(401).json({
+          success: false,
+          error: { code: '402', message: 'User Not Found' }
+        });
+      }
+
+      logger.debug(`User authenticated: ${user.email}`);
+      req.user = user;
+      next();
+    });
+  } catch (error) {
+    logger.error('Authentication error', {
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
+    next(error);
+  }
 };
 
-export const refreshToken=(req: Request, res: Response) => {
+export const refreshToken = (req: Request, res: Response) => {
   try {
-    const refreshToken = req.cookies?.jwt;
-    //console.log(req.body)
-    //console.log(req.cookies?.jwt)
+    console.log(req.body)
+    const refreshToken = req.cookies?.jwt||req.body?.refreshToken;
+    logger.debug('Processing refresh token request');
 
-    if (refreshToken === null) return res.sendStatus(401);
+    if (!refreshToken) {
+      logger.warn('Refresh token missing');
+      return res.sendStatus(401);
+    }
 
-    jwt.verify(refreshToken, Deno.env.get("JWT_REFRESH_SECRET"), (err:jwt.VerifyErrors , decoded: { id: string;email:string; }) => {
-      if (err) return res.sendStatus(403);
-      const token = jwt.sign({id: decoded.id, email: decoded.email}, Deno.env.get("JWT_SECRET"), {
-        expiresIn: '1d', // Short-lived token
-      });
+    jwt.verify(
+      refreshToken,
+      Deno.env.get("JWT_REFRESH_SECRET") as string,
+      (err: jwt.VerifyErrors | null, decoded: { id: string; email: string; }) => {
+        if (err) {
+          logger.warn('Invalid refresh token', { error: err.message });
+          return res.sendStatus(403);
+        }
 
-      return res.json({ token });
+        const token = jwt.sign(
+          { id: decoded.id, email: decoded.email },
+          Deno.env.get("JWT_SECRET") as string,
+          { expiresIn: '1d' }
+        );
+
+        logger.info(`Token refreshed for user: ${decoded.email} ${token}`);
+        return res.json({ token });
+      }
+    );
+  } catch (error) {
+    logger.error('Token refresh failed', {
+      error: error instanceof Error ? error.message : 'Unknown error'
     });
-  } catch (error:jwt.VerifyErrors) {
-    res.status(500).json({ message: error.message });
+    res.status(500).json({ message: error instanceof Error ? error.message : 'Unknown error' });
   }
-}
+};

@@ -7,7 +7,7 @@
     "dev": "deno run --allow-net --allow-env --allow-read --allow-write --allow-sys --watch src/app.ts",
     "start": "deno run --allow-net --allow-env --allow-read --allow-write --allow-sys src/app.ts",
     "build": "deno compile --allow-net --allow-env --allow-read --allow-write --allow-sys --output dist/server src/app.ts",
-    "deploy": "deployctl deploy --project=codingdud-webgenbackend --prod --include-files .env src/app.ts --no-static",
+    "deploy": "deployctl deploy --project=codingdud-webgenbackend --prod --include-files .env.prod src/app.ts --no-static",
     "test": "deno test --allow-net --allow-env --allow-read"
   },
   "imports": {

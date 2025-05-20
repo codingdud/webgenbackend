@@ -64,6 +64,7 @@ export const generateImage = async (req: Request, res: Response) => {
 
     logger.debug('Updating user credits');
     user.subscription.creditsRemaining -= 1;
+    user.subscription.totalImgGenrated += 1;
     await user.save();
 
     logger.debug('Uploading image to Cloudinary');

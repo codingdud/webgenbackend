@@ -34,6 +34,10 @@ const projectSchema = new mongoose.Schema({
   updatedAt: { 
     type: Date, 
     default: Date.now 
+  },
+  publish:{
+    type: Boolean,
+    default: false
   }
 });
 
